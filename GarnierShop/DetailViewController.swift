@@ -272,8 +272,6 @@ class DetailViewController: UIViewController {
         }
     }
     
-
-    
     func updateCartItems(name: String) -> [CartStruct] {
          guard var cartItems = self.getCartData() else { return [] }
          cartItems = cartItems.filter({ $0.cartItems.name != name })
@@ -283,11 +281,6 @@ class DetailViewController: UIViewController {
          UserDefaults.standard.set(cartItems.count, forKey: "CountAddedProducts")
          return cartItems
        }
-    
-    /*func calculateCartTotal() {
-        var total = 0
-        
-    }*/
 
     func showAlert() {
         let alert = UIAlertController(title: "Item Added to Cart", message: nil, preferredStyle: .alert)

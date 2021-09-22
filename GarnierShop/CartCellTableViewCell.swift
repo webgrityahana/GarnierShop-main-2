@@ -45,6 +45,14 @@ class CartCellTableViewCell: UITableViewCell {
         else {
             prodCount.text = "0"
         }*/
+        
+        let v = UserDefaults.standard.string(forKey: "count")
+        if v != nil {
+            prodCount.text = v
+        }
+        else {
+            prodCount.text = "1"
+        }
     
         imageFrame.layer.cornerRadius = 15
         imageFrame.clipsToBounds = true

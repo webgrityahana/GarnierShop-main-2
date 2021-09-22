@@ -27,7 +27,7 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         
         self.getCartData()
-        self.getCartNo()
+        //self.getCartNo()
         
         //lblStoringCount()
         
@@ -65,13 +65,13 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
            }
        }
     
-    func getCartNo() {
+    /*func getCartNo() {
         let defaults = UserDefaults.standard
         if let data = defaults.data(forKey: "count") {
           cartArray = try! PropertyListDecoder().decode([CartStruct].self, from: data)
           cartTableView.reloadData()
         }
-    }
+    }*/
     
     func svCart(data: CartStruct) {
        let defaults = UserDefaults.standard
@@ -190,6 +190,9 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.displaySubTotal()
             self.displayTotal()
             //self.lblStoringCount()
+            
+            CartCellTableViewCell().prodCount.text = "\(CartCellTableViewCell().prodCount)"
+            UserDefaults.standard.set(CartCellTableViewCell().prodCount, forKey: "count")
         }
     }
     
@@ -200,6 +203,9 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.displaySubTotal()
             self.displayTotal()
             //self.lblStoringCount()
+            
+            CartCellTableViewCell().prodCount.text = "\(CartCellTableViewCell().prodCount)"
+            UserDefaults.standard.set(CartCellTableViewCell().prodCount, forKey: "count")
         }
     }
     
