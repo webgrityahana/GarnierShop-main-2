@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.4.3)
+  - DropDown (2.3.13)
+  - OAuthSwift (2.2.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - DropDown
+  - OAuthSwift
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DropDown
+    - OAuthSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  OAuthSwift: 75efbb5bd9a4b2b71a37bd7e986bf3f55ddd54c6
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 0f2eb1383cb3bfd9cab1833e09a40f5dee4f1e4b
+
+COCOAPODS: 1.10.2

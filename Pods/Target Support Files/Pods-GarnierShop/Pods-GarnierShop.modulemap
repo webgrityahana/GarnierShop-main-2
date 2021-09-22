@@ -1,0 +1,6 @@
+module Pods_GarnierShop {
+  umbrella header "Pods-GarnierShop-umbrella.h"
+
+  export *
+  module * { export * }
+}
